@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PulseFit Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="password-screen">
+  <div class="password-box">
+    <h2>🔐 Enter Store Password</h2>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <button onclick="checkPassword()">Enter Store</button>
+    <p id="error"></p>
+  </div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="main-content">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h2>PulseFit</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Shop</a>
+      <a href="mailto:rajugadipally8@gmail.com">Contact</a>
+<a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Train Smarter. Live Stronger.</h1>
+      <p>Premium Fitness Gear for Your Home</p>
+      <button onclick="scrollToProducts()">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="products">
+    <h2>Best Sellers</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+        <h3>Resistance Bands</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Resistance Bands', 499)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61">
+        <h3>Ab Roller</h3>
+        <p>₹799</p>
+        <button onclick="addToCart('Ab Roller', 799)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c">
+        <h3>Push-up Board</h3>
+        <p>₹999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="box">💪 Build Strength</div>
+    <div class="box">⚡ Fast Results</div>
+    <div class="box">🏠 Home Workout</div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>What People Say</h2>
+    <div class="review">"Amazing quality!" ⭐⭐⭐⭐⭐</div>
+    <div class="review">"Best home workout gear!" ⭐⭐⭐⭐⭐</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 PulseFit. All rights reserved.</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
